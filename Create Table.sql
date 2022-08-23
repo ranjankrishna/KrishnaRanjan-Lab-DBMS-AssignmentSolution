@@ -1,7 +1,9 @@
+--  QUESTION1:  You are required to create tables for supplier,customer,category,product,supplier_pricing,order,rating to store the data for the E-commerce with the schema definition given below.
+
 Create Database if not exists `order-directory` ;
 use `order-directory`;
 
-
+--                 CREATING 7 TABLES MENTIONED: supplier, customer, category, product, supplier_pricing, order, rating
 
 create table if not exists `supplier`(
 `SUPP_ID` int primary key,
@@ -82,6 +84,11 @@ CREATE TABLE IF NOT EXISTS `rating` (
   FOREIGN KEY (`CUS_ID`) REFERENCES CUSTOMER(`CUS_ID`)
   );
 
+-- ----------------------------------------------------------------------------------------------------------------------------------
+
+-- QUESTION 2: Insert the following data in the table created above
+
+-- INSERTING INTO 7 TABLES MENTIONED: supplier, customer, category, product, supplier_pricing, order, rating
 
 insert into `supplier` values(1,"Rajesh Retails","Delhi",'1234567890');
 insert into `supplier` values(2,"Appario Ltd.","Mumbai",'2589631470');
@@ -117,11 +124,11 @@ INSERT INTO `PRODUCT` VALUES(5,"HARRY POTTER","NBEMCTHTJTH",1);
 
 
   
-INSERT INTO `PRODUCT_DETAILS` VALUES(1,1,2,1500);
-INSERT INTO `PRODUCT_DETAILS` VALUES(2,3,5,30000);
-INSERT INTO `PRODUCT_DETAILS` VALUES(3,5,1,3000);
-INSERT INTO `PRODUCT_DETAILS` VALUES(4,2,3,2500);
-INSERT INTO `PRODUCT_DETAILS` VALUES(5,4,1,1000);
+INSERT INTO `SUPPLIER_PRICING` VALUES(1,1,2,1500);
+INSERT INTO `SUPPLIER_PRICING` VALUES(2,3,5,30000);
+INSERT INTO `SUPPLIER_PRICING` VALUES(3,5,1,3000);
+INSERT INTO `SUPPLIER_PRICING` VALUES(4,2,3,2500);
+INSERT INTO `SUPPLIER_PRICING` VALUES(5,4,1,1000);
 
   
 
